@@ -133,5 +133,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
+
 # common msm8974
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
