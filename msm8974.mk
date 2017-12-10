@@ -72,14 +72,6 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     tinymix
 
-# Bluetooth
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl
-
-# DRM
-PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0-impl
-
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
@@ -93,19 +85,11 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8974 \
     memtrack.msm8974
 
-# GNSS
-PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl
-
 # Keylayouts
 PRODUCT_COPY_FILES += \
     device/samsung/msm8974-common/keylayout/cyttsp-i2c.kl:system/usr/keylayout/cyttsp-i2c.kl \
     device/samsung/msm8974-common/keylayout/keypad_8960.kl:system/usr/keylayout/keypad_8960.kl \
     device/samsung/msm8974-common/keylayout/Vendor_04e8_Product_7021.kl:system/usr/keylayout/Vendor_04e8_Product_7021.kl
-
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-impl
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -130,28 +114,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl \
     power.msm8974
-
-# Sensors
-PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl
-
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service
-
-# Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-impl
-
-# Netutils
-PRODUCT_PACKAGES += \
-    netutils-wrapper-1.0 \
-    android.system.net.netd@1.0 \
-    libandroid_net
-
-# ART
-PRODUCT_PACKAGES += \
-    libandroid_runtime_shim
 
 # common msm8974
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
